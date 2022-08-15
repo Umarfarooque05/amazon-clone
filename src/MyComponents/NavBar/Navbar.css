@@ -1,0 +1,15 @@
+.navbar{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: nowrap;
+    padding: 0;
+    background-color: #121821;
+    width: 100%;
+}
+.searchbox{
+    width: 50%;
+}
+p{
+    margin-bottom: 0;
+    font-size: 14px;
+}

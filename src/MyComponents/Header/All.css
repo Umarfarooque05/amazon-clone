@@ -1,0 +1,38 @@
+.header{
+    background-color: #222e3e;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0 5px 0;
+    font-size: 15px;
+    position: sticky;
+}
+
+button{
+    display: flex;
+}
+
+button:hover {
+    border-radius: 2px;
+    border: 1px solid #fff ;
+}
+
+@media only screen and (max-width:1290px) {
+    .lastbutton{
+        display: none;
+    }
+}
+@media only screen and (max-width:1180px) {
+    .secondbutton{
+        display: none;
+    }
+}
+@media only screen and (max-width:1110px) {
+    .thirdbutton{
+        display: none;
+    }
+}
+@media only screen and (max-width:1020px) {
+    .forthbutton{
+        display: none;
+    }
+}
