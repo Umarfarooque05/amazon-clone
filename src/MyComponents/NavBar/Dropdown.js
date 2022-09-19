@@ -25,12 +25,14 @@ export const Dropdown = () => {
     { id: 19, name: 'Gift Cards' }
   ];
   
+  const listItem = amazonList.map(data => (
+    <option key={data.id}>{data.name}</option>
+  ))
+  
   return (
     <div>
       <ul className="dropdown-menu shutter">
-        {amazonList.map(data => (
-          <li key={data.id}>{data.name}</li>
-        ))}
+        {listItem}
       </ul>
     </div>
   )

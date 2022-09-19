@@ -1,0 +1,33 @@
+.container1{
+    background-color: #fff;
+    position: relative;
+    color: #000;
+    margin: 1%;
+    top: 550px;
+    background-color: #EBECED;
+}
+
+h4{
+    margin: 0;
+    display: contents;
+}
+.container2{
+    display: flex;    
+}
+
+.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+  
+.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+  
+.scrollmenu a:hover {
+    background-color: #777;
+}

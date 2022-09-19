@@ -1,25 +1,82 @@
+import { isContentEditable } from '@testing-library/user-event/dist/utils';
 import React from 'react';
 import "./All.css";
 import { Button } from './Button';
 
+const buttonContent=[
+  {
+    id:1,
+    text:"All",
+  },
+  {
+    id:2,
+    text:"Best Sellers",
+  },
+  {
+    id:3,
+    text:"Today's Deals",
+  },
+  {
+    id:4,
+    text:"Mobiles",
+  },
+  {
+    id:5,
+    text:"Costumer Services",
+  },
+  {
+    id:6,
+    text:"Books",
+  },
+  {
+    id:7,
+    text:"Electronics",
+  },
+  {
+    id:8,
+    text:"Prime",
+  },
+  {
+    id:9,
+    text:"Fashion",
+  },
+  {
+    id:10,
+    text:"New Release",
+  },
+  {
+    id:11,
+    text:"Home & kitchen",
+  },
+  {
+    id:12,
+    cname:"forthbutton",
+    text:"Amazon Pay"
+  },
+  {
+    id:13,
+    cname:"thirdbutton",
+    text:"Computers"
+  },
+  {
+    id:14,
+    cname:"secondbutton",
+    text:"Coupons"
+  },
+  {
+    id:15,
+    cname:"lastbutton",
+    text:"Toys & Games"
+  },
+
+]
+
 export const All = () => {
   return (
     <div className='container-fluid header'>
-        <Button text={'<strong>All'}></Button>
-        <Button text={'Best Sellers'}></Button>
-        <Button text={"Today's Deals"}></Button>
-        <Button text={'Mobiles'}></Button>
-        <Button text={'Costumer Services'}></Button>
-        <Button text={'Books'}></Button>
-        <Button text={'Electronics'}></Button>
-        <Button text={'Prime'}></Button>
-        <Button text={'Fashion'}></Button>
-        <Button text={'New Release'}></Button>
-        <Button text={'Home & kitchen'}></Button>
-        <Button cname={'forthbutton'} text={'Amazon Pay'}></Button>
-        <Button cname={'thirdbutton'} text={'Computers'}></Button>
-        <Button cname={'secondbutton'} text={'Coupons'}></Button>
-        <Button cname={'lastbutton'} text={'Toys & Games'}></Button>
+        {buttonContent.map(data=>(
+          <Button  key={data.id} className={data.cname} text={data.text}></Button>
+        ))}        
     </div>
   )
 }
